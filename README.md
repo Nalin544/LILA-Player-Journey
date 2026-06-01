@@ -110,7 +110,7 @@ http://https://lila-player-journey.onrender.com
 Swagger documentation:
 
 ```text
-http://https://lila-player-journey.onrender.com/docs
+https://lila-player-journey.onrender.com/docs
 ```
 
 ### Frontend Setup
@@ -126,7 +126,7 @@ npm run dev
 Frontend will run at:
 
 ```text
-http://localhost:5173
+https://lila-player-journey-lake.vercel.app/
 ```
 
 ## Application Workflow
