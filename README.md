@@ -1,5 +1,13 @@
 # LILA Player Journey Tool
 
+## Live Demo
+
+Frontend:
+https://lila-player-journey-lake.vercel.app/
+
+Backend API Docs:
+https://lila-player-journey.onrender.com/docs
+
 ## Overview
 
 The LILA Player Journey Tool is an interactive web application designed to help Level Designers analyze player behavior using gameplay telemetry data.
