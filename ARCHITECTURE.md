@@ -8,6 +8,17 @@
 * Data Format: Parquet
 * Visualization: React Components and SVG
 
+### Technology Decisions
+
+| Technology      | Why It Was Chosen                                                                                 |
+| --------------- | ------------------------------------------------------------------------------------------------- |
+| React + Vite    | Provides a fast and responsive frontend for interactive visualizations and rapid development.     |
+| FastAPI         | Lightweight, easy to develop APIs with excellent performance and automatic API documentation.     |
+| Pandas          | Simplifies loading, filtering, and aggregating parquet telemetry data.                            |
+| Parquet         | Efficient columnar storage format suitable for large telemetry datasets.                          |
+| SVG             | Enables lightweight rendering of player paths and journey visualizations directly in the browser. |
+| Render + Vercel | Simple deployment workflow with free hosting suitable for rapid prototyping and evaluation.       |
+
 ## System Architecture
 
 ```text
