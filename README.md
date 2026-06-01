@@ -8,7 +8,7 @@ https://lila-player-journey-lake.vercel.app/
 Backend API Docs:
 https://lila-player-journey.onrender.com/docs
 
-Note!
+**NOTE⚠️**
 
 The backend is hosted on Render's free tier.
 
