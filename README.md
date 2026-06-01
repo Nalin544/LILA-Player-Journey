@@ -8,6 +8,14 @@ https://lila-player-journey-lake.vercel.app/
 Backend API Docs:
 https://lila-player-journey.onrender.com/docs
 
+## Note
+
+The backend is hosted on Render's free tier.
+
+If the application has been inactive, the first request may take up to 60 seconds while the backend wakes up.
+
+If the dashboard does not load immediately, please wait briefly and refresh once.
+
 ## Overview
 
 The LILA Player Journey Tool is an interactive web application designed to help Level Designers analyze player behavior using gameplay telemetry data.
