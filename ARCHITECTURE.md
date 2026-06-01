@@ -43,8 +43,6 @@ Player Journey Visualization
 4. React fetches data from the API using HTTP requests.
 5. The frontend renders player journeys, events, statistics, and heatmaps on top of the minimap images.
 
-```
-```
 ## Coordinate Mapping
 
 ### Problem
