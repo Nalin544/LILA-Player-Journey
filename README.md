@@ -20,19 +20,19 @@ If the dashboard does not load immediately, please wait briefly and refresh once
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+<img src="screenshots/dashboard.png" width="700">
 
 ### Traffic Heatmap
 
-![Traffic Heatmap](screenshots/traffic-heatmap.png)
+<img src="screenshots/traffic-heatmap.png" width="700">
 
 ### Kill Heatmap
 
-![Kill Heatmap](screenshots/kill-heatmap.png)
+<img src="screenshots/kill-heatmap.png" width="700">
 
 ### Death Heatmap
 
-![Death Heatmap](screenshots/death-heatmap.png)
+<img src="screenshots/death-heatmap.png" width="700">
 
 
 ## Overview
