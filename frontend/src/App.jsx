@@ -18,14 +18,24 @@ function App() {
 
   const [playing, setPlaying] = useState(false);
 
-  useEffect(() => {
-    axios.get("https://lila-player-journey.onrender.com/maps")
-      .then(res => {
-        setMaps(res.data);
-        setSelectedMap(res.data[0]);
-      });
+  const [loading, setLoading] = useState(true);
 
-  }, []);
+ useEffect(() => {
+
+  setLoading(true);
+
+  axios.get("https://lila-player-journey.onrender.com/maps")
+    .then(res => {
+      setMaps(res.data);
+      setSelectedMap(res.data[0]);
+      setLoading(false);
+    })
+    .catch(err => {
+      console.error(err);
+      setLoading(false);
+    });
+
+}, []);
 
   useEffect(() => {
 
@@ -341,9 +351,64 @@ const filteredEvents = matchData
       color: "white"
     };
 
+  if (loading) {
+  return (
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#121212"
+      }}
+    >
+      <div
+        style={{
+          padding: "30px",
+          border: "5px solid #444",
+          borderRadius: "12px",
+          backgroundColor: "#1e1e1e",
+          textAlign: "center",
+          maxWidth: "500px"
+        }}
+      >
+        <h2>LILA Player Journey Tool</h2>
+
+        <p>
+          Loading telemetry data...
+        </p>
+
+        <p
+          style={{
+            color: "#aaa"
+          }}
+        >
+          Backend is hosted on Render free tier.
+          The first load may take up to
+          60 seconds while the server wakes up.
+        </p>
+      </div>
+    </div>
+  );
+}
   
 return (
   <div style={{ padding: "20px" }}>
+
+    <div
+  style={{
+    backgroundColor: "#1e1e1e",
+    border: "1px solid #444",
+    borderRadius: "8px",
+    padding: "10px",
+    marginBottom: "15px",
+    textAlign: "center",
+    color: "#aaa"
+  }}
+>
+  ℹ Backend hosted on Render free tier.
+  First request after inactivity may take up to 60 seconds.
+</div>
 
     <h1>LILA Player Journey Tool</h1>
 
