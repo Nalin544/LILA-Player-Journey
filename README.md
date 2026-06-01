@@ -16,6 +16,25 @@ If the application has been inactive, the first request may take up to 60 second
 
 If the dashboard does not load immediately, please wait briefly and refresh once.
 
+## Screenshots
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### Traffic Heatmap
+
+![Traffic Heatmap](screenshots/traffic-heatmap.png)
+
+### Kill Heatmap
+
+![Kill Heatmap](screenshots/kill-heatmap.png)
+
+### Death Heatmap
+
+![Death Heatmap](screenshots/death-heatmap.png)
+
+
 ## Overview
 
 The LILA Player Journey Tool is an interactive web application designed to help Level Designers analyze player behavior using gameplay telemetry data.
@@ -51,6 +70,8 @@ Users can explore matches through replay controls, event filtering, statistics, 
   * Death Events
 
 ### Heatmaps
+
+
 
 * Traffic Heatmap
 * Kill Heatmap
