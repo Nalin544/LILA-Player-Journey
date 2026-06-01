@@ -19,7 +19,7 @@ function App() {
   const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/maps")
+    axios.get("https://lila-player-journey.onrender.com/maps")
       .then(res => {
         setMaps(res.data);
         setSelectedMap(res.data[0]);
@@ -31,7 +31,7 @@ function App() {
 
   if (!selectedMap) return;
   axios
-    .get(`http://127.0.0.1:8000/matches/${selectedMap}`)
+    .get(`https://lila-player-journey.onrender.com/matches/${selectedMap}`)
     .then((res) => {
       setMatches(res.data);
       if (res.data.length > 0) {
@@ -43,7 +43,7 @@ function App() {
   useEffect(() => {
   if (!selectedMatch) return;
   axios
-    .get(`http://127.0.0.1:8000/match/${selectedMatch}`)
+    .get(`https://lila-player-journey.onrender.com/match/${selectedMatch}`)
     .then((res) => {
       setMatchData(res.data);
     });
@@ -158,7 +158,7 @@ const positionEvents = matchData
     (a, b) =>
       new Date(a.ts) - new Date(b.ts)
   );
-  
+
 const playerPaths = {};
 
 positionEvents.forEach(event => {

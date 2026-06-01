@@ -96,13 +96,13 @@ uvicorn main:app --reload
 Backend will run at:
 
 ```text
-http://127.0.0.1:8000
+http://https://lila-player-journey.onrender.com
 ```
 
 Swagger documentation:
 
 ```text
-http://127.0.0.1:8000/docs
+http://https://lila-player-journey.onrender.com/docs
 ```
 
 ### Frontend Setup
