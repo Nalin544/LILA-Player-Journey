@@ -20,23 +20,26 @@ function App() {
 
   const [loading, setLoading] = useState(true);
 
- useEffect(() => {
+useEffect(() => {
 
   setLoading(true);
 
-  axios.get("https://lila-player-journey.onrender.com/maps")
-    .then(res => {
-      setMaps(res.data);
-      setSelectedMap(res.data[0]);
-      setLoading(false);
-    })
-    .catch(err => {
-      console.error(err);
-      setLoading(false);
-    });
+  const loadMaps = () => {
+    axios.get("https://lila-player-journey.onrender.com/maps")
+      .then(res => {
+        setMaps(res.data);
+        setSelectedMap(res.data[0]);
+        setLoading(false);
+      })
+      .catch(() => {
+        setTimeout(loadMaps, 10000); // retry after 10 sec
+      });
+  };
+
+  loadMaps();
 
 }, []);
-
+  
   useEffect(() => {
 
   if (!selectedMap) return;
